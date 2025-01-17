@@ -1,0 +1,6 @@
+{{define "page:title"}}Create A Battery{{end}}
+
+{{define "page:main"}}
+    <h1 class="text-3xl font-bold">Created Battery {{ .BatteryID }}</h1>
+    <img src="data:image/png;base64, {{ .Image }}"/>
+{{end}}

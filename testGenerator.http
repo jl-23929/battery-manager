@@ -1,0 +1,18 @@
+# curl -X POST
+#    --form "size=256"
+#    --form "content=https://twilio.com"
+#    http://localhost:8080/generate
+POST http://localhost:4001/generate
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="size"
+
+256
+--WebAppBoundary
+Content-Disposition: form-data; name="content"
+
+http://192.168.1.16:4001/battery
+--WebAppBoundary--
+
+###
